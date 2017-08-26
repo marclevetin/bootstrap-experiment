@@ -2,7 +2,7 @@
   <div class="jumbotron">
     <div class="row">
       <div class="col-sm-8">
-        <h1>Bacon</h1>
+        <h1>Bacon <small>is yummy</small></h1>
       </div>
       <div class="col-sm-4">
         <img src="http://baconmockup.com/300/200/" class="img-rounded" />
@@ -11,7 +11,7 @@
   </div>
   <h2>This is a way for me to learn Bootstrap.</h2>
   <p>
-    Bacon ipsum dolor amet filet mignon swine doner, bresaola picanha drumstick pork chop kevin meatball jowl sirloin cow ground round tail leberkas. Jerky turkey tail drumstick pig cupim strip steak filet mignon alcatra tri-tip spare ribs ham. Kielbasa ham pork pork belly alcatra. Pork capicola short loin venison. T-bone cow picanha, kevin andouille bacon sirloin meatball short loin. Pork rump pig meatball chuck chicken. Meatball landjaeger alcatra sausage ground round picanha swine rump drumstick cupim short ribs fatback tri-tip.
+    <%= @opening %>
   </p>
   <h2>Tabular bacon</h2>
   <table class="table">
@@ -38,6 +38,17 @@
       </td>
     </tr>
   </table>
+  <h2>Bacon buttons</h2>
+  <button class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#demo">Want more bacon?</button>
+
+  <div id="demo" class="collapse">
+    <p>
+      <%= @opening %>
+    </p>
+    <p>
+      <%= @second %>
+    </p>
+  </div>
   <h2>Bacon images</h2>
   <div id='baconCarousel' class='carousel slide' data-ride='carousel'>
     <!-- Indicators -->
@@ -52,7 +63,7 @@
         <img class="img-responsive center-block" src="http://baconmockup.com/400/300/" />
         <div class="carousel-caption">
           <p>
-            Bacon ipsum dolor amet cupim ham hock bacon pork chop alcatra ham pork shoulder pancetta sirloin rump ground round tongue tail.
+            <%= @caption_a %>
           </p>
         </div>
       </div>
@@ -60,7 +71,7 @@
         <img class="img-responsive center-block" src="http://baconmockup.com/500/300/" />
         <div class="carousel-caption">
           <p>
-            Spicy jalapeno bacon ipsum dolor amet pork belly shank occaecat in, salami meatball ground round minim pork loin ribeye turducken.
+            <%= @caption_b %>
           </p>
         </div>
       </div>
@@ -68,7 +79,7 @@
         <img class="img-responsive center-block" src="http://baconmockup.com/300/300/" />
         <div class="carousel-caption">
           <p>
-            Spicy jalapeno bacon ipsum dolor amet culpa capicola ut shank pariatur nostrud shankle jowl magna spare ribs sed incididunt ham.
+            <%= @caption_c %>
           </p>
         </div>
       </div>
@@ -84,17 +95,4 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <h2>Bacon buttons</h2>
-  <button class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#demo">Want more bacon?</button>
-
-  <div id="demo" class="collapse">
-    <p>
-      Bacon ipsum dolor amet venison meatball drumstick tongue frankfurter chuck. Tongue ball tip tri-tip flank pig leberkas. Pork belly kevin meatloaf, short loin ball tip flank chicken tail. Turducken short loin cow picanha fatback andouille. Tongue capicola shank frankfurter fatback tenderloin.
-    </p>
-    <p>
-      T-bone sirloin meatloaf tongue, sausage pastrami chicken landjaeger spare ribs capicola. Capicola spare ribs alcatra pig burgdoggen, hamburger landjaeger pancetta ham hock pork belly leberkas brisket frankfurter t-bone. Pig turkey ribeye t-bone. Drumstick pork belly kielbasa sausage boudin capicola biltong shoulder ham frankfurter salami pork landjaeger sirloin.
-    </p>
-  </div>
-
-  <button class="btn btn-secondary disabled">Disabled bacon</button>
 </div>
